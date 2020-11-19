@@ -10,7 +10,7 @@ Version 0.1 - Initial alpha release
 * Action buttons press detection
 * Create button and Options button press detection
 * PS button, Mute button and touchpad click detection
-* Touchpad X-axis detection with 2-finger multitouch
+* Touchpad Y-axis detection with 2-finger multitouch
 * Simple, easy-to-use annotated outputs
 * Easily editable and expandable in Max
 
@@ -22,7 +22,7 @@ Version 0.1 - Initial alpha release
 * Because of the fast (10ms) polling speed, a dual-core Intel Core 2 Duo or better is recommended.
 
 **Planned features:**
-* Touchpad Y-axis detection and output
+* Touchpad X-axis detection and output
 * Full gyroscope and accelerometer detection and output
 * Built-in microphone sound detection
 * Two-way communication to enable light bar, haptic feedback, rumble, built-in speaker and Adaptive Trigger motor control
