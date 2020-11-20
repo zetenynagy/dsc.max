@@ -20,7 +20,6 @@ A Max/MSP patcher for using Sony DualSense controllers as input devices in the M
 
 **Dependencies and requirements**
 * Max/MSP is required to use this patcher.
-* Because of the fast (10ms) polling speed, a dual-core Intel Core 2 Duo or better is recommended.
 
 **Planned features:**
 * Touchpad X-axis detection and output
