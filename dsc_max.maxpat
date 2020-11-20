@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+		"rect" : [ 564.0, 296.0, 919.0, 486.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -66,11 +66,11 @@
 				"box" : 				{
 					"comment" : "bang to refresh HID device list",
 					"id" : "obj-42",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.5, 98.0, 30.0, 30.0 ]
 				}
 
@@ -102,12 +102,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-38",
-					"linecount" : 4,
+					"linecount" : 19,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 226.0, 48.0, 406.0, 60.0 ],
-					"text" : "This software is available under fair use. The development and release of this software is in no way affiliated with SONY. \"DualSense\" is a registered trademark or trademark of Sony Interactive Entertainment Inc. \"SONY\" is a registered trademark of Sony Corporation."
+					"patching_rect" : [ 223.0, 15.0, 409.0, 261.0 ],
+					"text" : "This software is available under fair use. The development and release of this software is in no way affiliated with SONY. \"DualSense\" is a registered trademark or trademark of Sony Interactive Entertainment Inc. \"SONY\" is a registered trademark of Sony Corporation.\n\nMax/MSP Copyright (c) 2015, Cycling '74.\nAll rights reserved.\n\nThe developer of this software is not responsible for and can not be held liable for any damages done to an end user's equipment. Use at your own risk. THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
 				}
 
 			}
@@ -115,11 +115,11 @@
 				"box" : 				{
 					"comment" : "Toggle poll ",
 					"id" : "obj-36",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 76.219999999999999, 48.0, 30.0, 30.0 ]
 				}
 
@@ -140,7 +140,7 @@
 				"box" : 				{
 					"comment" : "Touchpad Finger 2 X (0-67)",
 					"id" : "obj-22",
-					"index" : 25,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -152,7 +152,7 @@
 				"box" : 				{
 					"comment" : "Touchpad Finger 1 X (0-67)",
 					"id" : "obj-23",
-					"index" : 24,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -164,7 +164,7 @@
 				"box" : 				{
 					"comment" : "D-Pad Position (0-8)",
 					"id" : "obj-24",
-					"index" : 23,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -176,7 +176,7 @@
 				"box" : 				{
 					"comment" : "R2 Pressure (0-255)",
 					"id" : "obj-25",
-					"index" : 22,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -188,7 +188,7 @@
 				"box" : 				{
 					"comment" : "L2 Pressure (0-255)",
 					"id" : "obj-26",
-					"index" : 21,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -200,7 +200,7 @@
 				"box" : 				{
 					"comment" : "Right Stick Y (0-255)",
 					"id" : "obj-27",
-					"index" : 20,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -212,7 +212,7 @@
 				"box" : 				{
 					"comment" : "Right Stick X (0-255)",
 					"id" : "obj-28",
-					"index" : 19,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -224,7 +224,7 @@
 				"box" : 				{
 					"comment" : "Left Stick Y (0-255)",
 					"id" : "obj-29",
-					"index" : 18,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -236,7 +236,7 @@
 				"box" : 				{
 					"comment" : "Left Stick X (0-255)",
 					"id" : "obj-30",
-					"index" : 17,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -248,7 +248,7 @@
 				"box" : 				{
 					"comment" : "Mute Button (0/1)",
 					"id" : "obj-31",
-					"index" : 16,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -260,7 +260,7 @@
 				"box" : 				{
 					"comment" : "Touchpad Click (0/1)",
 					"id" : "obj-32",
-					"index" : 15,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -272,7 +272,7 @@
 				"box" : 				{
 					"comment" : "PS Button (0/1)",
 					"id" : "obj-33",
-					"index" : 14,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -284,7 +284,7 @@
 				"box" : 				{
 					"comment" : "R3 (0/1)",
 					"id" : "obj-16",
-					"index" : 13,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -296,7 +296,7 @@
 				"box" : 				{
 					"comment" : "L3 (0/1)",
 					"id" : "obj-17",
-					"index" : 12,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -308,7 +308,7 @@
 				"box" : 				{
 					"comment" : "Options Button (0/1)",
 					"id" : "obj-18",
-					"index" : 11,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -320,7 +320,7 @@
 				"box" : 				{
 					"comment" : "Create Button (0/1)",
 					"id" : "obj-19",
-					"index" : 10,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -332,7 +332,7 @@
 				"box" : 				{
 					"comment" : "R2 (0/1)",
 					"id" : "obj-20",
-					"index" : 9,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -344,7 +344,7 @@
 				"box" : 				{
 					"comment" : "L2 (0/1)",
 					"id" : "obj-21",
-					"index" : 8,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -356,7 +356,7 @@
 				"box" : 				{
 					"comment" : "R1 (0/1)",
 					"id" : "obj-15",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -368,7 +368,7 @@
 				"box" : 				{
 					"comment" : "L1 (0/1)",
 					"id" : "obj-14",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -380,7 +380,7 @@
 				"box" : 				{
 					"comment" : "Triangle Button (0/1)",
 					"id" : "obj-13",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -392,7 +392,7 @@
 				"box" : 				{
 					"comment" : "O (Circle) Button (0/1)",
 					"id" : "obj-12",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -404,7 +404,7 @@
 				"box" : 				{
 					"comment" : "X Button (0/1)",
 					"id" : "obj-11",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -416,7 +416,7 @@
 				"box" : 				{
 					"comment" : "Square Button (0/1)",
 					"id" : "obj-9",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -428,7 +428,7 @@
 				"box" : 				{
 					"comment" : "Connect to middle outlet of umenu",
 					"id" : "obj-6",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -441,7 +441,7 @@
 				"box" : 				{
 					"comment" : "Connecto to umenu",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -781,7 +781,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
