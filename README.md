@@ -11,6 +11,8 @@ Version 0.1 - Initial alpha release
 * Create button and Options button press detection
 * PS button, Mute button and touchpad click detection
 * Touchpad Y-axis detection with 2-finger multitouch
+* Built-in microphone support
+* Haptic feedback support - see Example.maxpat
 * Simple, easy-to-use annotated outputs
 * Easily editable and expandable in Max
 
@@ -24,8 +26,7 @@ Version 0.1 - Initial alpha release
 **Planned features:**
 * Touchpad X-axis detection and output
 * Full gyroscope and accelerometer detection and output
-* Built-in microphone sound detection
-* Two-way communication to enable light bar, haptic feedback, rumble, built-in speaker and Adaptive Trigger motor control
+* Two-way communication to enable light bar, rumble, built-in speaker and Adaptive Trigger motor control
 * Wireless support
 
 **Known bugs:**
@@ -35,3 +36,12 @@ Version 0.1 - Initial alpha release
   
 "PlayStation", "PlayStation Family Mark", "PS5 logo", "PS5", "DualSense" and "DUALSHOCK" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. "SONY" is a registered trademark of Sony Corporation.
 This software is NOT affiliated with Sony, and does NOT mean to infringe it's copyrights and trademarks. This software was created under Fair Use.
+
+Max/MSP Copyright (c) 2015, Cycling '74.
+All rights reserved.
+
+The developer of this software is not responsible for and can not be held liable for any damages done to an end user's equipment. Use at your own risk. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Sources:
+[Reddit post by](https://www.reddit.com/r/gamedev/comments/jumvi5/dualsense_haptics_leds_and_more_hid_output_report/?sort=new)
+https://www.reddit.com/r/PS5/comments/jnp8tu/heres_how_to_get_audio_haptic_feedback_with/
