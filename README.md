@@ -1,5 +1,5 @@
 # DSC_Max
-A Max/MSP patcher for using Sony DualSense controllers as input devices in the Max environment via HID.
+A preconfigured Max/MSP patcher for using Sony DualSense controllers as input devices in the Max environment via HID.
 
 **Features:**
 * Analog stick absolute position detection
@@ -18,7 +18,7 @@ A Max/MSP patcher for using Sony DualSense controllers as input devices in the M
 **How to use?**
 * To use, simply connect your controller via USB, then open Max and create a new patcher. After adding the dsc_max object, connect the first outlet of dsc_max to the inlet of an umenu object. Then connect the second (middle) outlet of the aforementioned umenu to the second (middle) inlet of dsc_max. Send a bang on the first inlet of dsc_max, then select the device in the umenu. Connect the outlets to your liking, then toggle polling on the third (right) inlet. (See Example.maxpat)
 
-**Dependencies and requirements**
+**Dependencies and requirements:**
 * Max/MSP is required to use this patcher.
 
 **Planned features:**
@@ -26,11 +26,13 @@ A Max/MSP patcher for using Sony DualSense controllers as input devices in the M
 * Full gyroscope and accelerometer detection and output
 * Two-way communication to enable light bar, rumble, built-in speaker and Adaptive Trigger motor control
 * Wireless support
+* Full compatibility with DualShock 4 and DualShock 3
 
 **Known bugs:**
 * Max may not detect the controller if it was already open when it was plugged in. Please completely shut down Max, connect the controller via USB, then open it up again.
-* Tested and working on:
-  * Max/MSP 8.1.5, macOS Catalina 10.15.7
+
+**Tested and working on:**
+* Max/MSP 8.1.5, macOS Catalina 10.15.7
   
 "PlayStation", "PlayStation Family Mark", "PS5 logo", "PS5", "DualSense" and "DUALSHOCK" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. "SONY" is a registered trademark of Sony Corporation.
 This software is NOT affiliated with Sony, and does NOT mean to infringe it's copyrights and trademarks. This software was created under Fair Use.
