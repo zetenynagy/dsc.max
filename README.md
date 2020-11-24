@@ -1,5 +1,6 @@
 # DSC_Max
-Preconfigured Max/MSP abstractions for using Sony DualSense and DualShock 4 controllers as input devices in the Max environment via HID.
+# Experimental branch - hidapi transition
+**Most features do NOT work. Please use main branch or release version.**
 
 **Features:**
 * Support for DualSense (dsc.ds5) and DualShock 4 (dsc.ds4)
