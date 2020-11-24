@@ -1,0 +1,33 @@
+{
+	"author" : "Malik Enes Safak",
+	"authors" : [  ],
+	"description" : "Max wrapper for the hidapi",
+	"displayname" : "",
+	"extends" : "",
+	"extensible" : 0,
+	"homepatcher" : "",
+	"max_version_max" : "none",
+	"max_version_min" : "7.3.3",
+	"name" : "hidapi",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "10.9.x"
+		},
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "7"
+		}
+	},
+	"package_extra" : 	{
+
+	},
+	"tags" : [ "hidapi", "externals" ],
+	"version" : "1.0.0",
+	"website" : "https://github.com/NullMember/max-hidapi",
+	"filelist" : 	{
+		"externals" : [ "hidapi.mxe", "hidapi.mxe64", "hidapi.mxo" ],
+		"help" : [ "hidapi.maxhelp" ],
+		"docs" : [ "refpages/hidapi.maxref.xml" ]
+	}
+}

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./c74ref.xsl" type="text/xsl"?>
+
+<c74object name="hidapi">
+	<digest>
+		hidapi wrapper
+	</digest>
+	<description>
+		Max wrapper for the hidapi
+	</description>
+	<discussion>
+		Refer to hidapi documentation for more information -> https://github.com/libusb/hidapi
+	</discussion>
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">
+			Malik Enes Safak
+		</metadata>
+		<metadata name="tag">
+			hidapi
+		</metadata>
+	</metadatalist>
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="atom">
+			<digest>
+				Call hidapi functions
+			</digest>
+		</inlet>
+	</inletlist>
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="atom">
+			<digest>
+				Get data returned from hidapi function
+			</digest>
+		</outlet>
+	</outletlist>
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="open">
+			<arglist>
+				<arg name="vendor-id" optional="1" id="0" type="int" />
+				<arg name="product-id" optional="1" id="1" type="int" />
+				<arg name="serial-number" optional="1" id="2" type="symbol" />
+			</arglist>
+			<digest>
+				Open hid device
+			</digest>
+			<description>
+				Usage: [open index] or [open vendor-id product-id] or [open vendor-id product-id serial-number].
+				Open hid device.
+				Send enumerate before using index.
+				If already opened this method will close previously opened device first.
+				Nonblocking will set to 1 as soon as device opened.
+				Returns 0 or -1 on error.
+			</description>
+		</method>
+		<method name="write">
+			<arglist>
+				<arg name="length" optional="0" id="0" type="int" />
+				<arg name="report-id" optional="0" id="1" type="int" />
+				<arg name="arguments" optional="1" id="2" type="int" />
+			</arglist>
+			<digest>
+				Write data to hid device
+			</digest>
+			<description>
+				Usage: [write length report-id arguments..].
+				Write data to hid device. length and report-id are mandatory but arguments are optional.
+				If size of arguments are not same as length hidapi appends 0 to data written.
+				Returns actual number of bytes written or -1 on error.
+			</description>
+		</method>
+		<method name="read">
+			<arglist>
+				<arg name="length" optional="0" id="0" type="int" />
+				<arg name="report-id" optional="0" id="1" type="int" />
+			</arglist>
+			<digest>
+				Read data from hid device
+			</digest>
+			<description>
+				Usage: [read length report-id].
+				Read data from hid device. length and report-id are mandatory.
+				If actual number of bytes read from device is not same as length, returned data length is same as length argument.
+				Returns actual number of bytes read and data returned from device or -1 on error.
+			</description>
+		</method>
+		<method name="close">
+			<digest>
+				Close previously opened hid device
+			</digest>
+			<description>
+				Usage: [close].
+				Close previously opened hid device.
+				Returns 0.
+			</description>
+		</method>
+		<method name="get_product_string">
+			<digest>
+				Get product string
+			</digest>
+			<description>
+				Usage: [get_product_string].
+				Returns product string as symbol or -1 on error.
+			</description>
+		</method>
+		<method name="get_manufacturer_string">
+			<digest>
+				Get manufacturer string
+			</digest>
+			<description>
+				Usage: [get_manufacturer_string].
+				Returns manufacturer string as symbol or -1 on error
+			</description>
+		</method>
+		<method name="get_serial_number_string">
+			<digest>
+				Get serial number string
+			</digest>
+			<description>
+				Usage: [get_serial_number_string].
+				Returns serial number string as symbol or -1 on error
+			</description>
+		</method>
+		<method name="get_indexed_string">
+			<arglist>
+				<arg name="index" optional="0" id="0" type="int" />
+			</arglist>
+			<digest>
+				Get indexed string
+			</digest>
+			<description>
+				Usage: [get_indexed_string index].
+				Returns indexed string as symbol or -1 on error
+			</description>
+		</method>
+		<method name="error">
+			<digest>
+				Get error
+			</digest>
+			<description>
+				Usage: [error].
+				Returns last generated error as symbol or -1 if no error generated
+			</description>
+		</method>
+		<method name="set_nonblocking">
+			<arglist>
+				<arg name="nonblocking" optional="0" id="0" type="int" />
+			</arglist>
+			<digest>
+				Set nonblocking
+			</digest>
+			<description>
+				Usage: [set_nonblocking nonblocking].
+				Set nonblocking. nonblocking is mandatory. 
+				Please keep in mind, writing 0 to nonblocking could crash Max.
+				Returns 0 or -1 on error.
+			</description>
+		</method>
+		<method name="enumerate">
+			<digest>
+				Enumerate devices
+			</digest>
+			<description>
+				Usage: [enumerate].
+				Enumerate devices.
+				Returns index vendor_id product_id serial_number manufacturer_string product_string
+				release_number page usage_page path.
+				You can store returned list directly in coll object.
+			</description>
+		</method>
+		<method name="open_path">
+			<arglist>
+				<arg name="path" optional="0" id="0" type="symbol" />
+			</arglist>
+			<digest>
+				Open device using os specific path
+			</digest>
+			<description>
+				Usage: [open_path path].
+				Open device using os specific path. path is mandatory.
+				You can get this path using enumerate method.
+				Returns 0 or -1 on error.
+			</description>
+		</method>
+		<method name="send_feature_report">
+			<arglist>
+				<arg name="length" optional="0" id="0" type="int" />
+				<arg name="report-id" optional="0" id="1" type="int" />
+				<arg name="arguments" optional="1" id="2" type="int" />
+			</arglist>
+			<digest>
+				Send feature report to hid device
+			</digest>
+			<description>
+				Usage: [send_feature_report length report-id arguments..].
+				Send feature report to hid device. length and report-id are mandatory but arguments are optional.
+				If size of arguments are not same as length hidapi appends 0 to data written.
+				Returns actual number of bytes written or -1 on error.
+			</description>
+		</method>
+		<method name="get_feature_report">
+			<arglist>
+				<arg name="length" optional="0" id="0" type="int" />
+				<arg name="report-id" optional="0" id="1" type="int" />
+			</arglist>
+			<digest>
+				Get feature report from hid device
+			</digest>
+			<description>
+				Usage: [get_feature_report length report-id].
+				Get feature report from hid device. length and report-id are mandatory.
+				Returns actual number of bytes read and data returned from device or -1 on error.
+			</description>
+		</method>
+		<method name="get_input_report">
+			<arglist>
+				<arg name="length" optional="0" id="0" type="int" />
+				<arg name="report-id" optional="0" id="1" type="int" />
+			</arglist>
+			<digest>
+				Get input report from hid device
+			</digest>
+			<description>
+				Usage: [get_input_report length report-id].
+				Get input report from hid device. length and report-id are mandatory.
+				Returns actual number of bytes read and data returned from device or -1 on error.
+			</description>
+		</method>
+		<method name="info">
+			<digest>
+				Print devices info to console
+			</digest>
+			<description>
+				Usage: [info].
+				Prints all connected devices info to console
+			</description>
+		</method>
+	</methodlist>
+</c74object>
