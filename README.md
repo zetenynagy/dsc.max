@@ -29,6 +29,7 @@ Preconfigured Max/MSP abstractions for using Sony DualSense and DualShock 4 cont
 * Full gyroscope and accelerometer detection and output
 * Two-way communication to enable light bar, rumble, built-in speaker and Adaptive Trigger (DualSense) motor control
 * Battery level reading
+* DualSense microphone input gain support
 * Wireless support via Bluetooth
 * Full compatibility with DualShock 3
 * Full transition to [hidapi](https://github.com/NullMember/maxhidapi) insted of Max's built-in [hi] object, for hotswapping and easy two-way communication
