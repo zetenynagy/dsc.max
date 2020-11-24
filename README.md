@@ -6,6 +6,8 @@
 
 Whether it is the main branch, or an experimental one, use DSC_Max at your own risk.
 
+Requires moving the full attached *hidapi* folder to your Max externals directory.
+
 **Pros**
 * Ability to hotswap controllers, can connect and disconnect at any time via USB without locking up Max
 * Easier data routing
