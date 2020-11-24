@@ -1,45 +1,28 @@
 # DSC_Max
 # Experimental branch - hidapi transition
-**Most features do NOT work. Please use main branch or release version.**
+**This is an experimental build. Please use main branch or release version.**
 
-**Features:**
-* Support for DualSense (dsc.ds5) and DualShock 4 (dsc.ds4)
-* Analog stick absolute position detection
-* L1, L2, L3, R1, R2, R3 button press detection
-* L2/R2 trigger pressure detection
-* 8-way D-Pad direction detection
-* Action buttons press detection
-* Create/Share button and Options button press detection
-* PS button, Mute button (DualSense) and touchpad click detection
-* Touchpad Y-axis detection with 2-finger multitouch
-* DualSense built-in microphone support
-* DualSense haptic feedback support - see Examples.maxpat
-* Roll and Pitch detection using gyroscope
-* Simple, easy-to-use annotated outputs
-* Easily editable and expandable in Max
+*A version of DSC_Max that is based on [maxhidapi](https://github.com/NullMember/maxhidapi) and by extension [hidapi](https://github.com/libusb/hidapi) instead of Max's built-in [hi] object.*
 
-**How to use?**
-* To use, simply connect your controller via USB, then open Max and create a new patcher. After adding your controller's designated dsc_max object (dsc.ds5 for DualSense, dsc.ds4 for DualShock 4), connect the first outlet of dsc_max to the inlet of an umenu object. Then connect the second (middle) outlet of the aforementioned umenu to the second (middle) inlet of dsc_max. Send a bang on the first inlet of dsc_max, then select the device in the umenu. Connect the outlets to your liking, then toggle polling on the third (right) inlet. (See Example.maxpat)
+Whether it is the main branch, or an experimental one, use DSC_Max at your own risk.
 
-**Dependencies and requirements:**
-* Max/MSP is required to use this patcher.
-* A Sony DualSense or DualShock 4 controller and their respective compatible USB cables are required.
+**Pros**
+* Ability to hotswap controllers, can connect and disconnect at any time via USB without locking up Max
+* Easier data routing
+* Possible bluetooth connection
+* Possible two-way communication: enables use of rumble, adaptive triggers, light bar etc.
+* Way less convoluted to set up: just needs a toggle to run
+* Lower level: theoretically consumes less CPU power
 
-**Planned features:**
-* Touchpad X-axis detection and output
-* Full gyroscope and accelerometer detection and output
-* Two-way communication to enable light bar, rumble, built-in speaker and Adaptive Trigger (DualSense) motor control
-* Battery level reading
-* DualSense microphone input gain support
-* Wireless support via Bluetooth
-* Full compatibility with DualShock 3
-* Full transition to [hidapi](https://github.com/NullMember/maxhidapi) insted of Max's built-in [hi] object, for hotswapping and easy two-way communication
+**Cons**
+* Button data comes out in a very different way, still no solution for it, would be very hard and inefficient to route them
+* DualShock 4 touchpad click and PS button data are nowhere to be found somehow
 
-**Known bugs:**
-* Max will not detect the controller if it was already open when it was plugged in. Please completely shut down Max, connect the controller via USB, then open it up again. This seems to be a limitation of the built-in [hi] object.
+**Known issues**
+* Currently very CPU intensive for some reason, this also introduces some latency
+* Bluetooth connections result in an error
 
-**Tested and working on:**
-* Max/MSP 8.1.5, macOS Catalina 10.15.7
+*This branch will eventually replace the old, [hi] based one. That will happen when all major bugs are ironed out, and feature parity is achieved.*
   
 "PlayStation", "PlayStation Family Mark", "PS5 logo", "PS5", "DualSense" and "DUALSHOCK" are registered trademarks or trademarks of Sony Interactive Entertainment Inc. "SONY" is a registered trademark of Sony Corporation.
 This software is NOT affiliated with Sony, and does NOT mean to infringe it's copyrights and trademarks. This software was created under Fair Use.
@@ -48,6 +31,8 @@ Max/MSP Copyright (c) 2015, Cycling '74.
 All rights reserved.
 
 The developer of this software is not responsible for and can not be held liable for any damages done to an end user's equipment. Use at your own risk. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Special thanks to GitHub user [NullMember](https://github.com/NullMember) and everyone behind [hidapi](https://github.com/libusb/hidapi) for making amazing software for everyone.
 
 Sources:
 [DS4Windows DualSense support ticket thread](https://github.com/Ryochan7/DS4Windows/issues/1545)
