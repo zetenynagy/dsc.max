@@ -13,7 +13,7 @@ Preconfigured Max/MSP abstractions for using Sony DualSense and DualShock 4 cont
 * Touchpad Y-axis detection with 2-finger multitouch
 * DualSense built-in microphone support
 * DualSense haptic feedback support - see Examples.maxpat
-* Roll and Pitch detection
+* Roll and Pitch detection using gyroscope
 * Simple, easy-to-use annotated outputs
 * Easily editable and expandable in Max
 
