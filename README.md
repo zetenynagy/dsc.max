@@ -23,6 +23,7 @@ Requires moving the full attached *hidapi* folder to your Max externals director
 **Known issues**
 * Currently very CPU intensive for some reason, this also introduces some latency
 * Bluetooth connections result in an error
+* Sending data to controller does not behave as expected
 
 *This branch will eventually replace the old, [hi] based one. That will happen when all major bugs are ironed out, and feature parity is achieved.*
   
