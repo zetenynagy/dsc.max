@@ -1,4 +1,4 @@
-# DSC_Max
+# dsc.max
 Preconfigured Max/MSP abstractions for using Sony DualSense and DualShock 4 controllers as input devices in the Max environment via HID.
 
 **Features:**
@@ -18,7 +18,7 @@ Preconfigured Max/MSP abstractions for using Sony DualSense and DualShock 4 cont
 * Easily editable and expandable in Max
 
 **How to use?**
-* To use, simply connect your controller via USB, then open Max and create a new patcher. After adding your controller's designated dsc_max object (dsc.ds5 for DualSense, dsc.ds4 for DualShock 4), connect the first outlet of dsc_max to the inlet of an umenu object. Then connect the second (middle) outlet of the aforementioned umenu to the second (middle) inlet of dsc_max. Send a bang on the first inlet of dsc_max, then select the device in the umenu. Connect the outlets to your liking, then toggle polling on the third (right) inlet. (See Example.maxpat)
+* To use, simply connect your controller via USB, then open Max and create a new patcher. After adding your controller's designated dsc.max object (dsc.ds5 for DualSense, dsc.ds4 for DualShock 4), connect the first outlet of dsc_max to the inlet of an umenu object. Then connect the second (middle) outlet of the aforementioned umenu to the second (middle) inlet of dsc_max. Send a bang on the first inlet of dsc_max, then select the device in the umenu. Connect the outlets to your liking, then toggle polling on the third (right) inlet. (See Example.maxpat)
 
 **Dependencies and requirements:**
 * Max/MSP is required to use this patcher.
