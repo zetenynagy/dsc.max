@@ -27,6 +27,9 @@ Preconfigured Max/MSP abstractions for using various game controllers as input d
 * Max/MSP is required to use this patcher.
 * A supported controller, cable and USB port, Bluetooth capabilities.
 
+**Upcoming features - currently work in progress, slated for the next update:**
+* Full USB compatibility with Google Stadia Controller (*dsc.sta.usb* abstraction)
+
 **Planned features:**
 * Touchpad X-axis detection and output (DualShock 4 and DualSense only)
 * Full gyroscope and accelerometer detection and output (DualShock 4 and DualSense only)
@@ -41,7 +44,6 @@ Preconfigured Max/MSP abstractions for using various game controllers as input d
 * Full USB and BT compatibility with Xbox Series Controller
 * Full USB and proprietary wireless compatibility (via adapter) with first generation Xbox One controller and first generation Xbox Elite controller
 * Full compatibility with Xbox Adaptive Controller
-* Full USB compatibility with Google Stadia Controller
 * Possible integration with PlayStation Move controller
 * Full BT compatibility with Nintendo Wii Remote
 * Full USB and BT compatibility with Nintendo Switch Joy-Cons
